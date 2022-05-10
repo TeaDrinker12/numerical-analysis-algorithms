@@ -29,7 +29,7 @@ def bisection(f, an, bn, i=1, maxIterations=5):
 	sign = int(math.copysign(1, f(cn)))
 	
 	if i == 1: print(f'i\tan\tbn\tcn\tsign')
-	print(f'{i}\t{an}\t{bn}\t{cn}\t{sign}')
+	print(f'{i}\t{round(an, 4)}\t{round(bn, 4)}\t{round(cn, 4)}\t{sign}')
 	
 	if i == maxIterations:
 		return cn
